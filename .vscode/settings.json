@@ -1,0 +1,18 @@
+{
+    "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.lineHeight": 22,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 4,   // Applies zoom to all the panels
+ //   "editor.lineNumbers":"off",
+ //   "editor.quickSuggestionsDelay": 1500,
+ //   "editor.hover.enabled": false,
+ //   "gitlens.mode.active": "zen",
+ //   "breadcrumbs.enabled": false,
+ //   "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Default Dark+",
+ //   "workbench.statusBar.visible": false,
+    "zenMode.hideActivityBar": true
+}
