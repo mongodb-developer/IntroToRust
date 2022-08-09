@@ -3,12 +3,16 @@ fn main() {
     println!("Hello, {whom}!");
     whom = "planet";
     println!("Bye, {whom}!");
-    let y: &str;
     let x = String::from("This is not a &str");
-    y = &x;
     use_string(&x);
     println!("x = {x}");
-    println!("y = {y}");
+
+    let times = "5";
+    let times: Option<i32> = times.parse().ok();
+    println!("times = {times:?}");
+    if let Some(v) = times {
+        println!("times = {v}");
+    }
 }
 
 fn use_string(s: &str) {
