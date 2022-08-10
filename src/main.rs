@@ -1,3 +1,4 @@
+mod in_memory_task_repo;
 mod task;
 
 use task::Task;
