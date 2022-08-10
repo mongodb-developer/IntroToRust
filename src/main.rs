@@ -11,4 +11,5 @@ fn main() {
     let mut repo = InMemoryTaskRepo::new();
     repo.add(task);
     println!("Repo: {repo:?}");
+    println!("Tasks in repo: {:?}", repo.list())
 }

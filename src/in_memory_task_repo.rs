@@ -13,4 +13,8 @@ impl InMemoryTaskRepo {
     pub fn add(&mut self, task: Task) {
         self.tasks.push(task);
     }
+
+    pub fn list(&self) -> Vec<Task> {
+        self.tasks.clone()
+    }
 }

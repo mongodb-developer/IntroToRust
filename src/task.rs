@@ -1,6 +1,6 @@
 use chrono::{NaiveDate, Utc};
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Task {
     pub name: String,
     #[allow(dead_code)]
