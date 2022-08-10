@@ -1,11 +1,11 @@
 use crate::task::Task;
 
-struct InMemoryTaskRepo {
+pub struct InMemoryTaskRepo {
     tasks: Vec<Task>,
 }
 
 impl InMemoryTaskRepo {
-    fn new() -> InMemoryTaskRepo {
+    pub fn new() -> InMemoryTaskRepo {
         InMemoryTaskRepo { tasks: vec![] }
     }
 }
