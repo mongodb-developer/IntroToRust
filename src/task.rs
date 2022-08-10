@@ -3,6 +3,7 @@ use chrono::{NaiveDate, Utc};
 #[derive(Debug)]
 pub struct Task {
     pub name: String,
+    #[allow(dead_code)]
     created: NaiveDate,
     pub due_date: Option<NaiveDate>,
     pub done: bool,
