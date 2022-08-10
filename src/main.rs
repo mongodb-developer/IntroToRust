@@ -3,9 +3,6 @@ mod task;
 use task::Task;
 
 fn main() {
-    let task = Task{
-        name: "Do homework".to_string(),
-        done: false
-    };
+    let task = Task::new("Do homework".to_string(), None, false);
     println!("Task: {task:?}");
 }
