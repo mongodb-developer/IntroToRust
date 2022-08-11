@@ -1,4 +1,5 @@
 use crate::task::Task;
+use crate::task_repo::TaskRepo;
 
 #[derive(Debug)]
 pub struct InMemoryTaskRepo {
@@ -9,12 +10,14 @@ impl InMemoryTaskRepo {
     pub fn new() -> InMemoryTaskRepo {
         InMemoryTaskRepo { tasks: vec![] }
     }
+}
 
-    pub fn add(&mut self, task: Task) {
+impl TaskRepo for InMemoryTaskRepo {
+    fn add(&mut self, task: Task) {
         self.tasks.push(task);
     }
 
-    pub fn list(&self) -> Vec<Task> {
+    fn list(&self) -> Vec<Task> {
         self.tasks.clone()
     }
 }

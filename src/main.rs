@@ -5,6 +5,7 @@ mod task_repo;
 use task::Task;
 
 use crate::in_memory_task_repo::InMemoryTaskRepo;
+use crate::task_repo::TaskRepo;
 
 fn main() {
     let task = Task::new("Do homework".to_string(), None, false);
