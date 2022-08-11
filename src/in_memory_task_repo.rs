@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 use crate::task::Task;
 use crate::task_repo::TaskRepo;
 
@@ -19,5 +21,11 @@ impl TaskRepo for InMemoryTaskRepo {
 
     fn list(&self) -> Vec<Task> {
         self.tasks.clone()
+    }
+}
+
+impl Display for InMemoryTaskRepo {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "Repo has {} tasks", self.tasks.len())
     }
 }

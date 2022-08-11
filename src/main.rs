@@ -19,5 +19,6 @@ fn use_task_repo<T: TaskRepo + Debug>(mut repo: T) {
     println!("Task: {task:?}");
     repo.add(task);
     println!("Repo: {repo:?}");
-    println!("Tasks in repo: {:?}", repo.list())
+    println!("Tasks in repo: {:?}", repo.list());
+    println!("Repo info: {repo}");
 }
