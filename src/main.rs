@@ -1,5 +1,6 @@
 mod in_memory_task_repo;
 mod task;
+mod task_repo;
 
 use task::Task;
 
