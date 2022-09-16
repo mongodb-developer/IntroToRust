@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 chrono = "0.4.21"
+mongodb = "2.3.0"
 tokio = { version = "1.20.1", features = ["full"] }
